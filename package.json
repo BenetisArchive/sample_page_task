@@ -1,13 +1,17 @@
 {
-  "name": "devbridge_sample",
+  "name": "DbTask",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "dependencies": {
     "gulp": "^3.8.10"
   },
   "devDependencies": {
-    "gulp-load-plugins": "^0.8.0"
+    "bower": "^1.3.12",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-sass": "^1.2.4",
+    "gulp-watch": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
