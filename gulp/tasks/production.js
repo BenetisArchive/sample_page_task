@@ -1,1 +1,1 @@
-gulp.task('production', ['copy.html', 'sass.prod', 'concat.prod']);
+gulp.task('production', ['copy.html.prod', 'sass.prod', 'concat.prod']);
