@@ -1,13 +1,40 @@
 var buildDestination = './build';
 var reload = require('browser-sync').reload;
 var notify = require("gulp-notify");
+var sourcemaps = require('gulp-sourcemaps');
+var minifyCSS = require('gulp-minify-css');
+var lazypipe = require('lazypipe');
+
+var sassSource = './app/styles/main.scss';
+
+var sassTransform = lazypipe()
+    .pipe(sourcemaps.init)
+    .pipe($.sass)
+    .pipe($.autoprefixer, {
+        browsers: ['last 2 versions', 'IE 8'],
+        cascade: false
+    })
+    .pipe(sourcemaps.write);
+
+var sassOutputAndReload = lazypipe()
+    .pipe(gulp.dest, buildDestination)
+    .pipe(reload,{stream:true});
+
 gulp.task('sass', function () {
-    gulp.src('./app/styles/main.scss')
-        .pipe($.sass())
-        .on('error', handleErrors)
-        .pipe(gulp.dest(buildDestination))
-        .pipe(reload({stream:true}));
+    gulp.src(sassSource)
+        .pipe(sassTransform())
+            .on('error', handleErrors)
+        .pipe(sassOutputAndReload())
 });
+
+gulp.task('sass.prod', function () {
+    gulp.src(sassSource)
+        .pipe(sassTransform())
+            .on('error', handleErrors)
+        .pipe(minifyCSS)
+        .pipe(sassOutputAndReload())
+});
+
 
 function handleErrors(errorType) {
     var args = Array.prototype.slice.call(arguments);
