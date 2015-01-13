@@ -16,6 +16,6 @@ gulp.task('concat', function() {
 gulp.task('concat.prod', function() {
     return gulp.src(scriptSource)
         .pipe($.concat('app.js'))
-        .pipe(uglify())
+        .pipe($.uglify())
         .pipe(concatOutputAndReload())
 });

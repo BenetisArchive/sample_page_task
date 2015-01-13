@@ -1,6 +1,9 @@
 var htmlSource = './app/*.html';
 var buildDestination = './build/';
 var reload = require('browser-sync').reload;
+var lazypipe = require('lazypipe');
+var minifyHTML = require('gulp-minify-html');
+
 
 var htmlOutputAndReload = lazypipe()
     .pipe(gulp.dest, buildDestination)

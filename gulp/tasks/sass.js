@@ -31,7 +31,7 @@ gulp.task('sass.prod', function () {
     gulp.src(sassSource)
         .pipe(sassTransform())
             .on('error', handleErrors)
-        .pipe(minifyCSS)
+        .pipe(minifyCSS())
         .pipe(sassOutputAndReload())
 });
 
