@@ -22,7 +22,7 @@ header {
 
   h1 {
     font-size: 60px;
-    line-height: 72%;
+    line-height: 69%;
     font-weight: bold;
     color: #ffc2dd;
     float: left;
@@ -32,15 +32,27 @@ header {
     left: 0;
   }
 
-  li {
-    float: left;
-  }
-
   #top_navigation {
     float: right;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+
+    ul {
+      list-style: none;
+      li {
+        display: inline;
+        padding: 0 3px;
+      }
+    }
+
     a {
       color: $topLinksColor;
     }
+  }
+
+  #main_navigation {
+    float: left;
   }
 
 }
