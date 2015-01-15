@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -10,9 +11,8 @@
 </head>
 <body>
 <div id="background_wrapper">
-    <div class="backgroundHeaderColorFiller"></div>
-    <div id="content_wrapper">
-        <header>
+    <header>
+        <div class="headerInside">
             <h1>The Site</h1>
             <nav>
                 <ul id="top_navigation">
@@ -37,7 +37,9 @@
                     <li><a href="index.html">menu link</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+      </header>
+    <div id="content_wrapper">
         <article id="content">
             <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
 
@@ -125,7 +127,6 @@
             <h2>Lorem ipsum.</h2>
         </footer>
     </div>
-    <div class="backgroundHeaderColorFiller"></div>
 </div>
 <script src="app.js" ></script>
 </body>

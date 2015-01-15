@@ -1,3 +1,28 @@
+//responsive
+$phone-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+//to sort later
+
 @mixin trebuchetFont() {
   font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
 }
@@ -15,4 +40,17 @@ $headerHeight: 117px;
 
 @mixin topNavigationColor() {
   color: black;
+}
+
+@mixin contentCenter() {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include desktop {
+    width: 1050px;
+  }
+
+  @include phone {
+    width: 100%;
+  }
 }

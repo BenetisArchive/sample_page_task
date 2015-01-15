@@ -3,8 +3,6 @@ header {
   height: $headerHeight;
 }
 
-.backgroundHeaderColorFiller {
-  @extend header;
-  float: left;
-  width: 100%;
+.headerInside {
+  @extend #content_wrapper;
 }
