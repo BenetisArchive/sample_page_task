@@ -1,0 +1,19 @@
+@mixin trebuchetFont() {
+  font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+}
+
+@mixin headerColor() {
+  color: #d3135a;
+}
+
+@mixin headerTitleColor() {
+  color: #ffc2dd;
+}
+
+@mixin navigationHoverColor() {
+  color: #333333;
+}
+
+@mixin topNavigationColor() {
+  color: black;
+}
