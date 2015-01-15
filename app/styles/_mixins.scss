@@ -21,25 +21,8 @@ $desktop-width: 1024px;
   }
 }
 
-//to sort later
-
 @mixin trebuchetFont() {
   font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
-}
-
-$headerColor : #d3135a;
-$headerHeight: 117px;
-
-@mixin headerTitleColor() {
-  color: #ffc2dd;
-}
-
-@mixin navigationHoverColor() {
-  color: #333333;
-}
-
-@mixin topNavigationColor() {
-  color: black;
 }
 
 @mixin contentCenter() {
