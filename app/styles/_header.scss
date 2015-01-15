@@ -1,11 +1,46 @@
 $headerColor : #d3135a;
-$headerHeight: 117px;
-
+$headerPadding: 20px;
+$headerHeight: 77px;
+$topLinksColor: black;
 header {
   background-color: $headerColor;
   height: $headerHeight;
-}
+  padding: $headerPadding;
 
-.headerInside {
-  @extend #content_wrapper;
+  .headerInside {
+    height: 100%;
+    @include contentCenter();
+    @include desktop {
+      width: 1010px;
+    }
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 72%;
+    font-weight: bold;
+    color: #ffc2dd;
+    float: left;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  li {
+    float: left;
+  }
+
+  #top_navigation {
+    float: right;
+    a {
+      color: $topLinksColor;
+    }
+  }
+
 }

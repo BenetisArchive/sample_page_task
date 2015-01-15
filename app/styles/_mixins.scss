@@ -10,7 +10,7 @@ $desktop-width: 1024px;
 }
 
 @mixin phone {
-  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+  @media (max-width: #{$phone-width}) {
     @content;
   }
 }
@@ -18,6 +18,14 @@ $desktop-width: 1024px;
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
     @content;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
