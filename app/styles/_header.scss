@@ -2,3 +2,9 @@ header {
   background-color: $headerColor;
   height: $headerHeight;
 }
+
+.backgroundHeaderColorFiller {
+  @extend header;
+  float: left;
+  width: 100%;
+}
