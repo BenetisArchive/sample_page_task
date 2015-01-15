@@ -1,8 +1,14 @@
-@import "_reset.scss";
-@import "_variables.scss";
-@import "_sprite.scss";
-
+@import "_reset";
+@import "_variables";
+@import "_sprite";
+@import "_header";
 
 html {
   @include trebuchetFont();
+}
+
+#content_wrapper {
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
 }

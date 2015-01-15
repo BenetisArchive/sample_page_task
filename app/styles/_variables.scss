@@ -2,9 +2,8 @@
   font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
 }
 
-@mixin headerColor() {
-  color: #d3135a;
-}
+$headerColor : #d3135a;
+$headerHeight: 117px;
 
 @mixin headerTitleColor() {
   color: #ffc2dd;
