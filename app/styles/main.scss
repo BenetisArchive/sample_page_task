@@ -5,6 +5,7 @@
 
 html {
   @include trebuchetFont();
+  background-color: #e6e6e6;
 }
 
 #content_wrapper {
@@ -12,3 +13,4 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+
