@@ -1,8 +1,16 @@
-html {
+body {
   @include trebuchetFont();
   background-color: #e6e6e6;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  line-height: 142%;
+}
+
+h2 {
+  line-height: normal;
 }
