@@ -3,7 +3,7 @@ $phone-width: 320px;
 $desktop-width: 1024px;
 
 @mixin responsive {
-  @media (min-width: #{$phone-width}) {
+  @media (min-width: #{$phone-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
   }
 }
