@@ -32,5 +32,17 @@ h3 {
 
 #article_group {
   @extend #left_article;
-  margin-left: 24px;
+  @include desktop {
+    margin-left: 24px;
+  }
+
+  li {
+    border-top: 1px solid #cccccc;
+    padding: 7px 0;
+    &:first-child {
+      border-top: none;
+      margin-top: 10px;
+    }
+  }
+
 }
