@@ -22,9 +22,9 @@ h3 {
 }
 
 #left_article {
-  float: left;
   @include textBackgroundBox();
   @include desktop {
+    float: left;
     width: 302px;
     height: 120px;
   }
