@@ -98,5 +98,14 @@ aside {
       height: 130px;
     }
 
+    input[type="submit"] {
+      background-color: $headerColor;
+      border: none;
+      color: white;
+      width: 110px;
+      padding: 10px 0;
+      letter-spacing: 2px;
+    }
+
   }
 }
