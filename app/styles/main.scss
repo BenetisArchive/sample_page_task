@@ -2,6 +2,7 @@
 @import "mixins";
 @import "_sprite";
 @import "_header";
+@import "_content.scss";
 
 html {
   @include trebuchetFont();

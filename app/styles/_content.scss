@@ -1,0 +1,16 @@
+#content {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: white;
+
+  @include desktop {
+    width: 710px;
+  }
+
+}
+
+h2 {
+  font-size: 38px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
