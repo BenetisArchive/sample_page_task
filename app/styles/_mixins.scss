@@ -40,10 +40,6 @@ $desktop-width: 1024px;
   @include desktop {
     width: 1010px;
   }
-
-  @include phone {
-    width: 100%;
-  }
 }
 
 @mixin textBackgroundBox() {
