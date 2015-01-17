@@ -1,4 +1,5 @@
 $grayDark : #4d4d4d;
+$grayLight : #898989;
 
 body {
   @include trebuchetFont();
@@ -10,7 +11,7 @@ a {
 }
 
 p {
-  line-height: 142%;
+  line-height: 143%;
 }
 
 h2 {
