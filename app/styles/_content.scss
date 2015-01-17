@@ -109,6 +109,11 @@ aside {
       width: 110px;
       padding: 10px 0;
       letter-spacing: 2px;
+
+      &:hover {
+        background-color: #c87695;
+        cursor: pointer;
+      }
     }
 
   }
