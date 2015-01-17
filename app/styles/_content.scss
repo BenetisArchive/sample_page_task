@@ -1,7 +1,10 @@
+#content_wrapper {
+  @include contentCenter();
+}
+
 #content {
   @include textBackgroundBox();
   margin-top: 40px;
-  padding: 20px;
   @include desktop {
     width: 668px;
   }
@@ -13,11 +16,21 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  @extend h2;
+  font-size: 24px;
+}
+
 #left_article {
+  float: left;
   @include textBackgroundBox();
-  margin-top: 20px;
   @include desktop {
     width: 302px;
-    padding: 20px;
+    height: 120px;
   }
+}
+
+#article_group {
+  @extend #left_article;
+  margin-left: 24px;
 }

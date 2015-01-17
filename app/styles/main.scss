@@ -3,12 +3,4 @@
 @import "_sprite";
 @import "_header";
 @import "_content.scss";
-
-html {
-  @include trebuchetFont();
-  background-color: #e6e6e6;
-}
-
-#content_wrapper {
-  @include contentCenter();
-}
+@import "_globals";

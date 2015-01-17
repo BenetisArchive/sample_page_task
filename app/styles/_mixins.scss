@@ -47,6 +47,7 @@ $desktop-width: 1024px;
 }
 
 @mixin textBackgroundBox() {
+  margin-top: 20px;
   padding: 20px;
   background-color: white;
 }
