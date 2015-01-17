@@ -5,7 +5,11 @@
 
 #content {
   @include textBackgroundBox();
-  margin-top: 40px;
+
+  @include desktop {
+    margin-top: 40px;
+  }
+
   padding-top: 15px;
   padding-bottom: 40px;
   p {
