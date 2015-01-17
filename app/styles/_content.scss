@@ -1,8 +1,8 @@
+$textBackgroundColor: white;
 #content {
   margin-top: 40px;
   padding: 20px;
-  background-color: white;
-
+  background-color: $textBackgroundColor;
   @include desktop {
     width: 668px;
   }
@@ -13,4 +13,9 @@ h2 {
   font-size: 38px;
   font-family: "Times New Roman", serif;
   font-weight: bold;
+}
+
+#left_article {
+  background-color: $textBackgroundColor;
+
 }
