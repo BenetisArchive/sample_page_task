@@ -1,12 +1,10 @@
-$textBackgroundColor: white;
 #content {
+  @include textBackgroundBox();
   margin-top: 40px;
   padding: 20px;
-  background-color: $textBackgroundColor;
   @include desktop {
     width: 668px;
   }
-
 }
 
 h2 {
@@ -16,6 +14,10 @@ h2 {
 }
 
 #left_article {
-  background-color: $textBackgroundColor;
-
+  @include textBackgroundBox();
+  margin-top: 20px;
+  @include desktop {
+    width: 302px;
+    padding: 20px;
+  }
 }
