@@ -119,7 +119,9 @@ aside {
       width: 110px;
       padding: 10px 0;
       letter-spacing: 2px;
-
+      @include responsive {
+        width: 100%;
+      }
       &:hover {
         background-color: #c87695;
         cursor: pointer;
