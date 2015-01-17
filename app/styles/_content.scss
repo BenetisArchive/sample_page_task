@@ -1,6 +1,10 @@
 #content_wrapper {
   @include contentCenter();
   @include clearfix();
+
+  @include desktop {
+    position: relative;
+  }
 }
 
 #content {
@@ -61,12 +65,12 @@ h3 {
 
 aside {
   @include desktop {
-    margin-top: -489px;
     float: right;
     width: 280px;
+    position: absolute;
+    right: 0;
+    top: 40px;
   }
-
-  font-size: 14px;
 
   #sidebar_article {
     h3 {
