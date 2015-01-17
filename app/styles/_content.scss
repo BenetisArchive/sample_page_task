@@ -130,3 +130,40 @@ aside {
 
   }
 }
+
+#highlights {
+  color: $grayDark;
+  background-color: #cccccc;
+  margin-top: 20px;
+  @include desktop {
+    float: left;
+    text-align: center;
+  }
+
+  @include responsive {
+    background-color: #cccccc;
+  }
+
+  article {
+    @include desktop {
+      width: 28%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @include responsive {
+      &:first-child {
+        border-top: 1px solid #979797;
+      }
+      border-bottom: 1px solid #979797;
+    }
+
+    text-align: left;
+    padding: 20px;
+  }
+}
+
+footer {
+  @include desktop {
+    float: left;
+  }
+}
