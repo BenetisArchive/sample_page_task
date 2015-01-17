@@ -66,6 +66,8 @@ aside {
     width: 280px;
   }
 
+  font-size: 14px;
+
   #sidebar_article {
     h3 {
       padding-bottom: 12px;
@@ -74,13 +76,12 @@ aside {
 
     p {
       padding: 13px 0 28px 0;
-      font-size: 14px;
     }
   }
 
   form {
     border: 1px solid $grayDark;
-    padding: 25px 20px 20px 20px;
+    padding: 20px;
 
     input[type="text"] {
       display: block;
@@ -88,8 +89,8 @@ aside {
       height: 30px;
       border: 1px solid $grayLight;
       box-sizing : border-box;
-      margin: 9px 0 20px 0;
-      text-indent: 12px;
+      margin: 7px 0 20px 0;
+      text-indent: 10px;
     }
 
     textarea {
