@@ -1,7 +1,6 @@
 $headerColor : #d3135a;
 $headerPadding: 20px;
 $headerHeight: 77px;
-$topLinksColor: black;
 header {
   background-color: $headerColor;
   height: $headerHeight;
@@ -47,12 +46,35 @@ header {
     }
 
     a {
-      color: $topLinksColor;
+      color: black;
     }
   }
 
   #main_navigation {
-    float: left;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    ul {
+      list-style: none;
+      li {
+        display: inline;
+        padding-left: 17px;
+      }
+    }
+
+    a {
+      color: white;
+
+      &:hover {
+        color: #333333;
+      }
+    }
+
   }
 
 }
