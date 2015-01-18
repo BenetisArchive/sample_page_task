@@ -10,14 +10,12 @@ var outputDataAndReload = lazypipe()
 gulp.task('concat', function() {
     return gulp.src(scriptSource)
         .pipe($.concat('app.js'))
-        .pipe(es6transpiler())
         .pipe(outputDataAndReload())
 });
 
 gulp.task('concat.prod', function() {
     return gulp.src(scriptSource)
         .pipe($.concat('app.js'))
-        .pipe(es6transpiler())
         .pipe($.uglify())
         .pipe(outputDataAndReload())
 });
