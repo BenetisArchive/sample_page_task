@@ -1,17 +1,11 @@
-$headerPadding: 20px;
 $headerHeight: 77px;
 header {
   background-color: $headerColor;
   height: $headerHeight;
-  padding: $headerPadding;
+  padding: 20px;
 
   .headerInside {
-    height: 100%;
-    @include contentCenter();
-    @include desktop {
-      width: 1010px;
-    }
-    position: relative;
+    @include wrapperForHeaderAndFooter();
   }
 
   h1 {

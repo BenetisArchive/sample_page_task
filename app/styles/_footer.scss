@@ -1,0 +1,44 @@
+footer {
+  @include clearfix();
+  margin-top: 24px;
+  padding: 20px;
+  background-color: #666666;
+  //todo responsive font
+  font-size: 12px;
+
+  #footerInside {
+    @include wrapperForHeaderAndFooter();
+  }
+
+  ul {
+    list-style: none;
+    li {
+      display: inline;
+      padding: 0 8px;
+      border-left: 1px solid white;
+
+      &:first-child {
+        border: none;
+        padding-left: 0;
+      }
+    }
+  }
+
+  p {
+    padding-top: 20px;
+    @include desktop {
+      width: 880px;
+      float: left;
+    }
+  }
+
+  h2 {
+    @include desktop {
+      float: right;
+    }
+  }
+
+  a {
+    color: white;
+  }
+}
