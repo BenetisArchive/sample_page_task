@@ -3,8 +3,11 @@ footer {
   margin-top: 24px;
   padding: 20px;
   background-color: #666666;
-  //todo responsive font
   font-size: 12px;
+
+  @include responsive {
+    font-size: 0.8em;
+  }
 
   #footerInside {
     @include wrapperForHeaderAndFooter();
