@@ -73,6 +73,11 @@ aside {
     top: 40px;
   }
 
+  @include responsive {
+    margin-top: 20px;
+    border-top: 1px solid $grayLight;
+  }
+
   #sidebar_article {
     @include responsive {
       padding: $globalPadding $globalPadding 0;
