@@ -28,6 +28,7 @@ header {
     @include responsive {
       margin-top: 15px;
       text-align: center;
+      line-height: 100%;
     }
   }
 
@@ -70,10 +71,18 @@ header {
           padding-left: 17px;
         }
       }
+
+      a {
+        color: white;
+
+        &:hover {
+          color: #333333;
+        }
+      }
     }
 
     @include responsive {
-      margin-top: 20px;
+      margin-top: 15px;
       text-align: center;
       font-weight: bold;
       li {
@@ -81,16 +90,11 @@ header {
         padding: 10px;
         margin-top: 1px;
       }
-    }
 
-    a {
-      color: $grayDark;
-
-      &:hover {
-        color: #333333;
+      a {
+        color: $grayDark;
       }
     }
-
   }
 
 }
