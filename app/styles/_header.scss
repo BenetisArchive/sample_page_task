@@ -2,7 +2,7 @@ $headerHeight: 77px;
 header {
   background-color: $headerColor;
   height: $headerHeight;
-  padding: 20px;
+  padding: $globalPadding;
 
   .headerInside {
     @include wrapperForHeaderAndFooter();

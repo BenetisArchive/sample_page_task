@@ -2,6 +2,9 @@ $grayDark : #414141;
 $grayLight : #898989;
 $headerColor : #d3135a;
 
+$globalPadding: 20px;
+
+
 body {
   @include trebuchetFont();
   background-color: #e6e6e6;

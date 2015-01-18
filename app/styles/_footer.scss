@@ -1,7 +1,7 @@
 footer {
   @include clearfix();
   margin-top: 24px;
-  padding: 20px;
+  padding: $globalPadding;
   background-color: #666666;
   font-size: 12px;
 
@@ -28,7 +28,7 @@ footer {
   }
 
   p {
-    padding-top: 20px;
+    padding-top: $globalPadding;
     color: #b3b3b3;
     @include desktop {
       width: 880px;

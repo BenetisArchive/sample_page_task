@@ -82,7 +82,7 @@ aside {
 
   #sidebar_article {
     @include responsive {
-      padding: 20px 20px 0 20px;
+      padding: $globalPadding $globalPadding 0;
     }
 
     h3 {
@@ -103,7 +103,7 @@ aside {
       border-right: none;
     }
 
-    padding: 20px;
+    padding: $globalPadding;
 
     input[type="text"] {
       display: block;
@@ -166,6 +166,6 @@ aside {
     }
 
     text-align: left;
-    padding: 20px;
+    padding: $globalPadding;
   }
 }
