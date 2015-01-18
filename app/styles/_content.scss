@@ -163,6 +163,29 @@ aside {
 }
 
 footer {
+  margin-top: 24px;
+  padding: 20px;
+  background-color: #666666;
+
+  ul {
+    list-style: none;
+    font-size: 12px;
+    li {
+      display: inline;
+      padding: 0 8px;
+      border-left: 1px solid white;
+
+      &:first-child {
+        border: none;
+        padding-left: 0;
+      }
+    }
+  }
+
+  a {
+    color: white;
+  }
+
   @include desktop {
     float: left;
   }
