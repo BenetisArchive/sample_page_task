@@ -148,10 +148,6 @@ aside {
     text-align: center;
   }
 
-  @include responsive {
-    background-color: #cccccc;
-  }
-
   article {
     @include desktop {
       width: 28%;
