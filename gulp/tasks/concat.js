@@ -7,7 +7,7 @@ var outputDataAndReload = lazypipe()
     .pipe(gulp.dest, buildDestination)
     .pipe(reload, {stream:true});
 
-gulp.task('concat_vendor', function() {
+gulp.task('concat.vendor', function() {
     return gulp.src([
         './bower_components/dropit/dropit.js'
     ])

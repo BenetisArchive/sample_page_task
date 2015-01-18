@@ -20,21 +20,24 @@ var sassOutputAndReload = lazypipe()
     .pipe(gulp.dest, buildDestination)
     .pipe(reload,{stream:true});
 
+gulp.task('sass.vendor', function() {
+    gulp.src([
+        './app/styles/main.scss',
+        './bower_components/dropit/dropit.css'
+    ])
+        .pipe(sassTransform())
+            .on('error', handleErrors)
+        .pipe(minifyCSS())
+        .pipe($.concat('main.css'))
+        .pipe(sassOutputAndReload())
+});
+
 gulp.task('sass', function () {
     gulp.src(sassSource)
         .pipe(sassTransform())
             .on('error', handleErrors)
         .pipe(sassOutputAndReload())
 });
-
-gulp.task('sass.prod', function () {
-    gulp.src(sassSource)
-        .pipe(sassTransform())
-            .on('error', handleErrors)
-        .pipe(minifyCSS())
-        .pipe(sassOutputAndReload())
-});
-
 
 function handleErrors(errorType) {
     var args = Array.prototype.slice.call(arguments);
