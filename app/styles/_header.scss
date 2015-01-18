@@ -1,11 +1,15 @@
 $headerHeight: 77px;
 header {
   background-color: $headerColor;
-  height: $headerHeight;
   padding: $globalPadding;
+
+  @include desktop {
+    height: $headerHeight;
+  }
 
   .headerInside {
     @include wrapperForHeaderAndFooter();
+    @include clearfix();
   }
 
   h1 {
@@ -13,18 +17,23 @@ header {
     line-height: 69%;
     font-weight: bold;
     color: #ffc2dd;
-    float: left;
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    @include desktop {
+      float: left;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    @include responsive {
+      margin-top: 15px;
+      text-align: center;
+    }
   }
 
   #top_navigation {
-    float: right;
     text-align: center;
     @include font-size(14px);
-    margin-top: 5px;
 
     ul {
       list-style: none;
@@ -34,26 +43,38 @@ header {
       }
     }
 
+    @include desktop {
+      margin-top: 5px;
+      float: right;
+    }
+
     a {
       color: black;
     }
   }
 
   #main_navigation {
-    float: right;
-    text-align: center;
-    @include font-size(20px);
+    @include desktop {
+      float: right;
+      text-align: center;
+      @include font-size(20px);
 
-    position: absolute;
-    bottom: 0;
-    right: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
 
-    ul {
-      list-style: none;
-      li {
-        display: inline;
-        padding-left: 17px;
+      ul {
+        list-style: none;
+        li {
+          display: inline;
+          padding-left: 17px;
+        }
       }
+    }
+
+    @include responsive {
+      float: left;
+      margin-top: 100px;
     }
 
     a {
