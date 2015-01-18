@@ -12,6 +12,13 @@ header {
     @include clearfix();
   }
 
+  //Hide dropdown lists
+  ul {
+    ul {
+      display: none;
+    }
+  }
+
   h1 {
     @include font-size(60px);
     line-height: 69%;
