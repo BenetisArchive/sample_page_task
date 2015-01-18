@@ -3,11 +3,8 @@ footer {
   margin-top: 24px;
   padding: $globalPadding;
   background-color: #666666;
-  font-size: 12px;
+  @include font-size(12px);
 
-  @include responsive {
-    font-size: 0.8em;
-  }
 
   #footerInside {
     @include wrapperForHeaderAndFooter();
@@ -43,7 +40,7 @@ footer {
     @include trebuchetFont();
     @include desktop {
       margin-top: 34px;
-      font-size: 31px;
+      @include font-size(31px);
     }
   }
 

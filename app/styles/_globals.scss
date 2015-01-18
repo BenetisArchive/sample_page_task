@@ -10,7 +10,7 @@ body {
   background-color: #e6e6e6;
 
   @include desktop {
-    font-size: 14px;
+    @include font-size(14px);
   }
 }
 

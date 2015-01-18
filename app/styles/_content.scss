@@ -27,22 +27,15 @@
 }
 
 h2 {
-  font-size: 38px;
+  @include font-size(38px);
   font-family: "Times New Roman", serif;
   font-weight: bold;
 
-  @include responsive {
-    font-size: 2em;
-  }
 }
 
 h3 {
   @extend h2;
-  font-size: 24px;
-
-  @include responsive {
-    font-size: 1.5em;
-  }
+  @include font-size(24px);
 }
 
 #left_article {
