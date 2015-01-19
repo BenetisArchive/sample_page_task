@@ -12,21 +12,18 @@ header {
     @include clearfix();
   }
 
-  .menu ul { display: none; } /* Hide before plugin loads */
-  .menu ul.dropit-submenu {
-    z-index: 1;
-    position: absolute;
-    top: 40px;
-    background-color: #4d4d4d;
-  }
-  .menu ul.dropit-submenu a {
-  }
-  .menu ul.dropit-submenu a:hover {
-    background: #248fc1;
-    color: #fff;
-    text-decoration: none;
-  }
+  .menu ul {
+    display: none;
+  } /* Hide before plugin loads */
 
+
+  #main_navigation > ul > li > ul {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 100%;
+    display: none;
+  }
 
   h1 {
     @include font-size(60px);
