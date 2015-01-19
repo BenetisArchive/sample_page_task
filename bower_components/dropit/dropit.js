@@ -57,7 +57,7 @@
 
                     // If hover
                     if(settings.action == 'mouseenter'){
-                        $el.on('mouseleave', "li", function(){
+                        $el.on('mouseleave', settings.triggerParentEl , function(){
                             settings.beforeHide.call(this);
                             $(this).removeClass('dropit-open').find(settings.submenuEl).hide();
                             settings.afterHide.call(this);
