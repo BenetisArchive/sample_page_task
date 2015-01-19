@@ -9,6 +9,7 @@ var outputDataAndReload = lazypipe()
 
 gulp.task('concat.vendor', function() {
     return gulp.src([
+        './bower_components/dropit/dropit.js'
     ])
         .pipe($.concat('vendor.js'))
         .pipe($.uglify())

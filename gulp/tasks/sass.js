@@ -22,7 +22,8 @@ var sassOutputAndReload = lazypipe()
 
 gulp.task('sass.vendor', function() {
     gulp.src([
-        './app/styles/main.scss'
+        './app/styles/main.scss',
+        './bower_components/dropit/dropit.css'
     ])
         .pipe(sassTransform())
             .on('error', handleErrors)

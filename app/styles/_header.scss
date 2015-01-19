@@ -12,19 +12,6 @@ header {
     @include clearfix();
   }
 
-  .menu ul {
-    display: none;
-  } /* Hide before plugin loads */
-
-
-  #main_navigation > ul > li > ul {
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    top: 100%;
-    display: none;
-  }
-
   h1 {
     @include font-size(60px);
     line-height: 69%;
@@ -71,6 +58,22 @@ header {
     }
   }
 
+  .menu ul { display: none; } /* Hide before plugin loads */
+  .menu ul.dropit-submenu {
+    z-index: 1;
+    position: absolute;
+    background-color: #4d4d4d;
+    width: 150px;
+  }
+  .menu ul.dropit-submenu a {
+  }
+  .menu ul.dropit-submenu a:hover {
+    background: #248fc1;
+    color: #fff;
+    text-decoration: none;
+  }
+
+
   #main_navigation {
     @include desktop {
       float: right;
@@ -86,6 +89,7 @@ header {
         & > li {
           display: inline-block;
           padding-left: 17px;
+          position: relative;
         }
       }
 
