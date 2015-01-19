@@ -58,24 +58,29 @@ header {
     }
   }
 
-  .menu ul { display: none; } /* Hide before plugin loads */
-  .menu ul.dropit-submenu {
-    z-index: 1;
-    position: absolute;
-    background-color: #4d4d4d;
-    width: 150px;
-  }
-  .menu ul.dropit-submenu a {
-  }
-  .menu ul.dropit-submenu a:hover {
-    background: #248fc1;
-    color: #fff;
-    text-decoration: none;
-  }
-
-
   #main_navigation {
+    .menu ul { display: none; } /* Hide before plugin loads */
     @include desktop {
+      .menu ul.dropit-submenu {
+        z-index: 1;
+        position: absolute;
+        background-color: #4d4d4d;
+        width: 150px;
+        font-size: 12px;
+      }
+      .menu ul.dropit-submenu li {
+        a {
+          display:block;
+          padding: 6px;
+          text-align: left;
+        }
+      }
+      .menu ul.dropit-submenu a:hover {
+        background: #666666;
+        color: #fff;
+        text-decoration: none;
+      }
+
       float: right;
       text-align: center;
       @include font-size(20px);
