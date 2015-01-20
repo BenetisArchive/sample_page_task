@@ -132,6 +132,7 @@ header {
       text-align: center;
       font-weight: bold;
       li {
+        position: relative;
         box-sizing: border-box;
         background-color: $grayBackground;
         padding: 10px 0;

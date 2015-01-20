@@ -1,0 +1,10 @@
+@import "_sprite";
+
+@include responsive {
+  .arrow-down {
+    @include sprite($arrow-down);
+    position: absolute;
+    top: 13px;
+    right: 20px;
+  }
+}
