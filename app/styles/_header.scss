@@ -104,11 +104,11 @@ header {
       float: right;
       text-align: center;
       @include font-size(20px);
-
       position: absolute;
       bottom: 0;
       right: 0;
 
+      //main menu
       & > ul {
         list-style: none;
         & > li {
@@ -121,7 +121,6 @@ header {
 
       a {
         color: white;
-
         &:hover {
           color: #333333;
         }
