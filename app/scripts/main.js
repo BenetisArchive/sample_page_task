@@ -8,12 +8,20 @@
         var menuLinks = menu.children("li");
 
         menuLinks.on("click", function() {
-            console.log(this);
+            var subMenu = $(this).find("ul");
+            if(subMenu.css("display") == "none") {
+                subMenu.show();
+            } else {
+                subMenu.hide();
+            }
         })
     };
 
 
-    $('.menu').dropdown();
+    if(isResponsive) {
+        $('.menu').dropdown();
+    } else {
+        $('.menu').dropit({ action: 'mouseenter' });
+    }
 
-    $('.menu').dropit({ action: 'mouseenter' });
 })(jQuery);

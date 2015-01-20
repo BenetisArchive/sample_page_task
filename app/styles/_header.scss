@@ -132,9 +132,24 @@ header {
       text-align: center;
       font-weight: bold;
       li {
+        box-sizing: border-box;
         background-color: $grayBackground;
-        padding: 10px;
-        border-bottom: 1px solid $headerColor;
+        padding: 10px 0;
+        border-bottom: 1px solid $grayLight;
+        & > ul {
+          li {
+            background-color: #d6d6d6;
+            &:first-child {
+              margin-top: 10px;
+              border-top: 1px solid $grayLight;
+            }
+
+            &:last-child {
+              border: none;
+              margin-bottom: -10px;
+            }
+          }
+        }
       }
 
       a {
