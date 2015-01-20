@@ -1,8 +1,18 @@
 @import "_sprite";
 
 @include responsive {
+  i {
+    display: block;
+  }
   .arrow-down {
     @include sprite($arrow-down);
+    position: absolute;
+    top: 13px;
+    right: 20px;
+  }
+
+  .arrow-up {
+    @include sprite($arrow-up);
     position: absolute;
     top: 13px;
     right: 20px;

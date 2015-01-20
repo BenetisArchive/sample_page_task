@@ -18,15 +18,26 @@ $arrow-down-offset-x: 0px;
 $arrow-down-offset-y: 0px;
 $arrow-down-width: 22px;
 $arrow-down-height: 12px;
-$arrow-down-total-width: 22px;
+$arrow-down-total-width: 44px;
 $arrow-down-total-height: 12px;
 $arrow-down-image: 'sprite.png';
-$arrow-down: 0px 0px 0px 0px 22px 12px 22px 12px 'sprite.png' 'arrow-down';
-$spritesheet-width: 22px;
+$arrow-down: 0px 0px 0px 0px 22px 12px 44px 12px 'sprite.png' 'arrow-down';
+$arrow-up-name: 'arrow-up';
+$arrow-up-x: 22px;
+$arrow-up-y: 0px;
+$arrow-up-offset-x: -22px;
+$arrow-up-offset-y: 0px;
+$arrow-up-width: 22px;
+$arrow-up-height: 12px;
+$arrow-up-total-width: 44px;
+$arrow-up-total-height: 12px;
+$arrow-up-image: 'sprite.png';
+$arrow-up: 22px 0px -22px 0px 22px 12px 44px 12px 'sprite.png' 'arrow-up';
+$spritesheet-width: 44px;
 $spritesheet-height: 12px;
 $spritesheet-image: 'sprite.png';
-$spritesheet-sprites: $arrow-down;
-$spritesheet: 22px 12px 'sprite.png' $spritesheet-sprites;
+$spritesheet-sprites: $arrow-down $arrow-up;
+$spritesheet: 44px 12px 'sprite.png' $spritesheet-sprites;
 
 /*
 The provided mixins are intended to be used with the array-like variables

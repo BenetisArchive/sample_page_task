@@ -9,10 +9,15 @@
 
         menuLinks.on("click", function() {
             var subMenu = $(this).find("ul");
+            var icon = $(this).find("i");
             if(subMenu.css("display") == "none") {
                 subMenu.show();
+                icon.removeClass("arrow-down");
+                icon.addClass("arrow-up");
             } else {
                 subMenu.hide();
+                icon.removeClass("arrow-up");
+                icon.addClass("arrow-down");
             }
         })
     };
