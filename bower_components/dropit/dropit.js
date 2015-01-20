@@ -87,7 +87,12 @@
         triggerParentEl: 'li', // The trigger parent element
         afterLoad: function(){}, // Triggers when plugin has loaded
         beforeShow: function(){}, // Triggers before submenu is shown
-        afterShow: function(){}, // Triggers after submenu is shown
+        afterShow: function(e){
+            var ul = $(this).siblings('.dropit-submenu');
+            if(!(ul.find(".arrow").length > 0)) {
+                ul.prepend('<div class="arrow"></div>');
+            }
+        }, // Triggers after submenu is shown
         beforeHide: function(){}, // Triggers before submenu is hidden
         afterHide: function(){} // Triggers before submenu is hidden
     };
