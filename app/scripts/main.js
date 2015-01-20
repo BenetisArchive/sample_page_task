@@ -1,8 +1,7 @@
 (function($) {
 
     //hack to see if page is loaded as responsive
-    var isResponsive = $("#screen").css("font-weight") == "bold";
-
+    var isResponsive = $("#screen").css("font-weight") == "100";
     $.fn.dropdown = function() {
         var menu = $(this);
         var menuLinks = menu.children("li");

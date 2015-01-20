@@ -32,6 +32,6 @@ h2 {
     font-size: 100px;
   }
   @include responsive {
-    font-weight: bold;
+    font-weight: 100;
   }
 }
