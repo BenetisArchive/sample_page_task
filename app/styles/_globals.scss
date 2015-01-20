@@ -26,3 +26,12 @@ p {
 h2 {
   line-height: normal;
 }
+
+#screen {
+  @include desktop {
+    font-size: 100px;
+  }
+  @include responsive {
+    font-weight: bold;
+  }
+}
