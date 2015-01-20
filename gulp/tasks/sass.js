@@ -27,6 +27,7 @@ gulp.task('sass.vendor', function() {
     ])
         .pipe(sassTransform())
             .on('error', handleErrors)
+        .pipe($.combineMq())
         .pipe(minifyCSS())
         .pipe($.concat('main.css'))
         .pipe(sassOutputAndReload())
@@ -36,6 +37,7 @@ gulp.task('sass', function () {
     gulp.src(sassSource)
         .pipe(sassTransform())
             .on('error', handleErrors)
+        .pipe($.combineMq())
         .pipe(sassOutputAndReload())
 });
 
