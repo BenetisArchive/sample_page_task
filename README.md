@@ -1,3 +1,1 @@
-#### TODO
-Javascript file loading if cdn is offline
-gulp-combine-mq 
+#Sample page task
